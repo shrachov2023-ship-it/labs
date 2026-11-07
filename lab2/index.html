@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб-технології | Лабораторні роботи</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #222;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: #1a1a2e;
+            color: white;
+            padding: 20px 40px;
+        }
+
+        header h1 {
+            font-size: 1.6rem;
+        }
+
+        nav {
+            background: #16213e;
+            padding: 10px 40px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        nav ul li a:hover {
+            color: #00d4ff;
+        }
+
+        nav ul li ol {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #0f3460;
+            padding: 10px 15px;
+            min-width: 220px;
+            border-radius: 4px;
+            z-index: 10;
+        }
+
+        nav ul li:hover ol {
+            display: block;
+        }
+
+        nav ul li ol li {
+            padding: 5px 0;
+            list-style: decimal inside;
+        }
+
+        nav ul li ol li a {
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        .wrapper {
+            display: flex;
+            gap: 20px;
+            padding: 30px 40px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        main {
+            flex: 3;
+        }
+
+        aside {
+            flex: 1;
+        }
+
+        article {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        }
+
+        article section h2 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            color: #1a1a2e;
+            border-bottom: 2px solid #00d4ff;
+            padding-bottom: 6px;
+        }
+
+        article section p {
+            line-height: 1.7;
+            color: #444;
+            font-size: 0.95rem;
+        }
+
+        aside {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+            align-self: start;
+        }
+
+        aside h3 {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            color: #1a1a2e;
+            border-bottom: 2px solid #00d4ff;
+            padding-bottom: 6px;
+        }
+
+        aside ul {
+            list-style: none;
+        }
+
+        aside ul li {
+            padding: 6px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        aside ul li:last-child {
+            border-bottom: none;
+        }
+
+        aside ul li a {
+            color: #0f3460;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        aside ul li a:hover {
+            text-decoration: underline;
+            color: #00d4ff;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: #aaa;
+            text-align: center;
+            padding: 16px;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Веб-технології та веб-дизайн</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Головна — список робіт</a></li>
+            <li>
+                <a href="#lab-section">Лабораторні роботи</a>
+                <ol>
+                    <li><a href="./lab1/index.html">Lab1 — Створення веб-сторінки з статичним текстом та розміщення в
+                            інтернеті</a></li>
+                    <li><a href="./lab2/index.html">Lab2 — Створення меню сайту. Розміщення проекту в репозиторії GitHub</a></li>
+                     <li><a href="./lab3/index.html">Lab3 — Розробка веб-сторінки з графічними елементами та мультимедіа</a></li>
+                     <li><a href="./lab4/index.html">Lab4 — Розробка веб-сторінки із формою “Анкета студента”</a></li>
+                    <li><a href="./pr1/index.html">Pr1 — Розробка блогу "Мої три найкращі міста світу"</a></li>
+                    <li><a href="./lab5/index.html">Lab5 — СSS. Робота з блочною моделлю. Інструменти веб-розробки Developer tools</a></li>
+                    <li><a href="./lab6/index.html">Lab6 — Створення веб-сторінки з плаваючими,багатоколонковими та модальними елементами</a></li>
+                </ol>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <main>
+            <article>
+                <section id="lab-section">
+                    <h2>Лабораторні роботи</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum. Pellentesque habitant morbi tristique senectus et netus et
+                        malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies
+                        eget, tempor sit amet, ante.
+                    </p>
+                </section>
+            </article>
+        </main>
+
+        <aside>
+            <h3>Інші курси</h3>
+            <ul>
+                <li><a href="https://www.coursera.org/learn/algorithms-part1" target="_blank">Алгоритми та структури даних</a></li>
+                <li><a href="https://www.khanacademy.org/math/linear-algebra" target="_blank">Лінійна алгебра</a></li>
+                <li><a href="https://www.coursera.org/learn/os-power-user" target="_blank">Операційні системи</a></li>
+                <li><a href="https://www.udemy.com/course/complete-sql-databases/" target="_blank">Бази даних</a></li>
+                <li><a href="https://www.coursera.org/specializations/computer-networks" target="_blank">Комп'ютерні мережі</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>©Copyright 2026 by Уляна Сербіна. All rights reversed.</p>
+    </footer>
+
+</body>
+
+</html>
